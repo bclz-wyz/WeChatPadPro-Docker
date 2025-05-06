@@ -3,6 +3,7 @@
 ### main 目录
 
 - stay 等文件的根目录，从 git 下载后解压到 main 即可。
+- 将setting.json覆盖main/assets/setting.json，并修改adminKey
 
 ### redis 目录
 
