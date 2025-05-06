@@ -26,9 +26,9 @@
 ### 停止容器
 
 ```
-    docker compose up -d
+    docker compose down
     # 或者
-    docker-compose up -d
+    docker-compose down
 ```
 
 ### 下载更新文件
