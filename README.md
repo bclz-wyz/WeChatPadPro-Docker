@@ -1,19 +1,42 @@
 ## 文件目录
 
-### main目录
+### main 目录
 
-- stay等文件的根目录，从git下载后解压到main即可。
+- stay 等文件的根目录，从 git 下载后解压到 main 即可。
 
-### redis目录
+### redis 目录
 
 - redis 数据及配置目录
-- 在redis/conf/redis.conf修改配置 (注意修改weChatPadPro对应参数)
+- 在 redis/conf/redis.conf 修改配置 (注意修改 weChatPadPro 对应参数)
 
-### mysql目录
-- 存放mysql容器相关文件——自动生成
+### mysql 目录
 
+- 存放 mysql 容器相关文件——自动生成
 
 ## 运行
+
+```
+    docker compose up -d
+    # 或者
+    docker-compose up -d
+```
+
+## 更新:
+
+### 停止容器
+
+```
+    docker compose up -d
+    # 或者
+    docker-compose up -d
+```
+
+### 下载更新文件
+
+- 从 git 重新下载 WeChatPadPro，放入 main
+
+### 重启容器
+
 ```
     docker compose up -d
     # 或者
