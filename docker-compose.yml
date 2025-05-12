@@ -51,7 +51,7 @@ services:
       options:
         max-size: "5g"
     volumes:
-      - ./redis/conf:/etc/redis/redis.conf # 映射配置文件目录，宿主机:容器
+      - ./redis/conf/redis.conf:/etc/redis/redis.conf # 映射配置文件目录，宿主机:容器
       - ./redis/data:/data # 映射数据目录，宿主机:容器
     restart: always # 容器开机自启
     privileged: true # 获取宿主机root权限
