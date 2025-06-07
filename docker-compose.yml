@@ -76,9 +76,10 @@ services:
       - mysql_wx
       - redis_wx
     volumes:
-      - ./main:/main # 映射数据目录，宿主机:容器
+      - ./WeChatPadPro:/WeChatPadPro # 映射数据目录，宿主机:容器
+      - ./setting.json:/WeChatPadPro/assets/setting.json # 映射配置文件目录，宿主机:容器
     # 指定工作目录
-    working_dir: /main
+    working_dir: /WeChatPadPro
     # 指定容器启动命令，执行./stay
     command: [ "/bin/sh", "-c", "chmod +x ./stay && ./stay" ]
     # 容器日志大小配置

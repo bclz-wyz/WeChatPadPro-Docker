@@ -1,0 +1,22 @@
+{
+    "mcpServers": {
+        "main": {
+            "port": "8057"
+        },
+        "swagger_loader": {
+            "command": "swagger-mcp",
+            "args": [
+                "--specUrl=http://localhost:8059/docs/swagger.json",
+                "-sse",
+                "--sseAddr=:8058",
+                "--baseUrl=http://localhost:8059"
+
+            ]
+        }
+    },
+
+    "features": {
+        "auto_accept_friend": true,
+        "message_sync": true
+    }
+}

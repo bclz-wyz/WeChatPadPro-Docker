@@ -2,8 +2,11 @@
 
 ### main 目录
 
-- stay 等文件的根目录，从 git 下载后解压到 main 即可。
-- 将setting.json覆盖main/assets/setting.json，并修改adminKey
+- stay 等文件的根目录，从 git 下载后解压到 WeChatPadPro 即可。
+
+### setting.json配置
+
+- 自动映射配置文件setting.json到WeChatPadPro/assets/setting.json
 
 ### redis 目录
 
@@ -34,7 +37,8 @@
 
 ### 下载更新文件
 
-- 从 git 重新下载 WeChatPadPro，放入 main
+- 从 git 重新下载WeChatPadPro的 执行文件等，放入./WeChatPadPro
+- 建议更新前备份原./WeChatPadPro为./WeChatPadPro-bak
 
 ### 重启容器
 
