@@ -1,12 +1,16 @@
 ## 文件目录
 
-### main 目录
+### WeChatPadPro 目录
 
 - stay 等文件的根目录，从 git 下载后解压到 WeChatPadPro 即可。
 
 ### setting.json配置
-
-- 自动映射配置文件setting.json到WeChatPadPro/assets/setting.json
+- 可按自己需求修改setting.json内容。若修改，请自行确保配置正确(与docker-compose.yml对应)。
+- 该文件会在 WeChatPadPro/assets/setting.json 中自动映射。
+- 主要配置项：
+  - `port`: WeChatPadPro 的端口，默认 8849
+  - `redisConfig`: redis 的连接信息因此在这里配置时应为 `redis:6379`
+  - `mySqlConnectStr`: mysql 的连接信息
 
 ### redis 目录
 
